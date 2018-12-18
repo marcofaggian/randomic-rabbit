@@ -1,0 +1,8 @@
+type MeQueryResponse {
+  errors: [Error!]
+  user: User
+}
+
+type Query {
+  me: MeQueryResponse!
+}

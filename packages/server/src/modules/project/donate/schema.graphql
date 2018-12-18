@@ -1,0 +1,18 @@
+type DonateResponse {
+  errors: [Error!]
+  project: Project
+  user: User
+}
+
+input DonateInput {
+  points: Int
+}
+
+input DonateWhereUniqueInput {
+  projectId: ID
+  userId: ID
+}
+
+type Mutation {
+  donate(where: DonateWhereUniqueInput!, data: DonateInput!): DonateResponse!
+}

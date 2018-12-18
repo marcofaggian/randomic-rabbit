@@ -1,0 +1,32 @@
+{
+  "name": "@randomic-rabbit/web",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "apollo-boost": "^0.1.22",
+    "apollo-link": "^1.2.6",
+    "apollo-link-http": "^1.5.9",
+    "apollo-link-ws": "^1.0.12",
+    "apollo-utilities": "^1.0.26",
+    "express": "^4.16.4",
+    "graphql-tag": "^2.10.0",
+    "react": "^16.6.3",
+    "react-apollo": "^2.3.3",
+    "react-dom": "^16.6.3",
+    "react-scripts": "2.1.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "package": "docker build . -t marcofaggian/randomic-rabbit-web"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}

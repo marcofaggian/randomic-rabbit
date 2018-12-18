@@ -1,0 +1,8 @@
+type ListAllGamesResponse {
+  errors: [Error!]
+  games: [Game!]
+}
+
+type Query {
+  listAllGames: ListAllGamesResponse!
+}

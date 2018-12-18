@@ -1,0 +1,19 @@
+type UpdateUserPointsResponse {
+  errors: [Error!]
+  user: User
+}
+
+input UpdateUserPointsInput {
+  points: Int
+}
+
+input UpdateUserPointsWhereUniqueInput {
+  id: ID
+}
+
+type Mutation {
+  updateUserPoints(
+    where: UpdateUserPointsWhereUniqueInput
+    data: UpdateUserPointsInput
+  ): UpdateUserPointsResponse!
+}

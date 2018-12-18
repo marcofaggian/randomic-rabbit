@@ -1,0 +1,8 @@
+type User {
+  id: ID!
+  email: String!
+  password: String!
+  confirmed: String
+  points: Int
+  pointsCounter: Int
+}

@@ -1,0 +1,8 @@
+type gameResponse {
+  errors: [Error!]
+  game: Game
+}
+
+type Query {
+  game(id: ID!): gameResponse!
+}

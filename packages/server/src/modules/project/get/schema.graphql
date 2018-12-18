@@ -1,0 +1,8 @@
+type projectResponse {
+  errors: [Error!]
+  project: Project
+}
+
+type Query {
+  project(id: ID!): projectResponse!
+}

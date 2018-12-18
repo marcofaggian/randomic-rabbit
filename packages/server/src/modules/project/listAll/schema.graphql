@@ -1,0 +1,8 @@
+type ListAllProjectsResponse {
+  errors: [Error!]
+  projects: [Project!]
+}
+
+type Query {
+  listAllProjects: ListAllProjectsResponse!
+}

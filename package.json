@@ -1,0 +1,23 @@
+{
+  "name": "randomic-rabbit",
+  "version": "0.1.0",
+  "scripts": {
+    "install": "lerna exec yarn",
+    "build": "lerna run build",
+    "package": "lerna run package"
+  },
+  "author": "marcofaggian <m@marcofaggian.com>",
+  "license": "MIT",
+  "private": true,
+  "repository": "marcofaggian/randomic-rabbit",
+  "homepage": "https://randomic-rabbit.marcofaggian.com",
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ],
+    "nohoist": []
+  },
+  "devDependencies": {
+    "lerna": "^3.6.0"
+  }
+}

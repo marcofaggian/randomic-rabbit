@@ -1,0 +1,22 @@
+type UpdateProjectResponse {
+  errors: [Error!]
+  project: Project
+}
+
+input ProjectUpdateInput {
+  name: String
+  description: String
+  targetPoints: Int
+  gainedPoints: Int
+}
+
+input ProjectWhereUniqueInput {
+  id: ID
+}
+
+type Mutation {
+  updateProject(
+    where: ProjectWhereUniqueInput!
+    data: ProjectUpdateInput!
+  ): UpdateProjectResponse!
+}

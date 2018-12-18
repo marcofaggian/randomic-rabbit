@@ -1,0 +1,7 @@
+type Game {
+  id: ID!
+  name: String!
+  description: String
+  image: Image
+  url: String!
+}
